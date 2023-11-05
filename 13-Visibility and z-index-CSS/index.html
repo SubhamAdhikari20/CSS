@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-Visibility and z-index-CSS</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 150px;
+            border: 3px solid red;
+            /* margin: 5px; */
+            
+        }
+        #box1{
+            background-color: aqua;
+            position: relative;
+            top: 50px;
+            z-index: 1;
+        }
+        #box2{
+            background-color: cadetblue;
+            position: relative;
+            top: 20px;
+            z-index: 0;
+        }
+        /* IMP Note:
+        z-index will only work in position: relative, absolute, sticky and fixed but it will not work in position (static) 
+        So, position must be set for z-index to work.
+        Greater the z-index as compared to the other, element will be stacked before it more.*/
+        #box3{
+            background-color: blanchedalmond;
+            /*hides the element but reserves its place */
+            /* visibility: hidden;*/
+            
+            /*hides the element completely with its place */
+            /* display: none;*/
+        }
+        #box4{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="box1"></div>
+    <div class="container" id="box2"></div>
+    <div class="container" id="box3"></div>
+    <div class="container" id="box4"></div>
+</body>
+</html>

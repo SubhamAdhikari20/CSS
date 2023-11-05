@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-Float and Clear-CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            border: 4px solid blue;
+            margin: 10px auto;
+            background-color: rgb(194, 134, 225);
+        }
+        .item{
+            border: 3px solid red;
+            border-radius: 10px;
+            margin: 10px 20px;
+            padding: 20px 25px;
+            background: rgb(241, 174, 174);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-style: italic; 
+            /* line-height: 50px; */
+        }
+         #food{
+            float: left;
+            width:30%;
+        }
+        #appliances{
+            float: left;
+            width: 30%;
+        }
+        #cosmetics{
+            /* float: left; */
+            width: 70%;
+            clear: both;
+            /*The clear property controls the flow next to floated elements.
+            The clear property specifies what should happen with the element that is next to a floating element.*/
+        } 
+        p,h3{
+            /* text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+        h2{
+
+            margin: 10px  auto;
+            padding: 20px;
+            width: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alignment</h1>
+    <div class="container">
+        <h2>Welocome Everyone</h2>
+        <div id="food" class="item">
+            <h3>Vegetables</h3>
+            <p id="vegies" class="fp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem praesentium nostrum temporibus veritatis voluptatibus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti dicta eligendi sequi ducimus sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, non!</p>
+        </div>
+        <div id="appliances" class="item">
+            <h3>E-Applainces</h3>
+            <p id="comp" class="sp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem praesentium nostrum temporibus veritatis voluptatibus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti dicta eligendi sequi ducimus sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, non! Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="cosmetics" class="item">
+            <h3>Cosmetics</h3>
+            <p id="facewash" class="tp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est nesciunt consequatur officia expedita et?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="books" class="fp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo consequatur, odit exercitationem aspernatur autem.</p>
+        </div>
+    </div>
+
+</body>
+</html>

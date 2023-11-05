@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes-CSS</title>
+    <style>
+        .container{
+            /* display: flex; */
+            background-color: burlywood;
+        }
+        .box{
+            background-color: aqua;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            /* top: 25px;
+            left: 10px; */
+            
+            /* animation-name: Subham;*/
+            /*We can write any name*/
+            /* animation-name: omg;    */
+            
+            /* animation-duration: 5s; */
+            
+            /*animation-timing-function*/
+            /* fast */
+            /* animation-timing-function: ease;   */
+            
+            /*first "slow" and "fast"*/
+            /* animation-timing-function: ease-in; */
+            
+            /*first "fast" then "slow"*/
+            /* animation-timing-function: ease-out;   */
+
+            /* first "slow" then "fast" and again "slow" */
+            /* animation-timing-function: ease-in-out; */
+            
+            /*delays for a particular duration*/
+            /* animation-delay: 3s; */
+            
+            /* animation-iteration-count */
+            /* animation-iteration-count: infinite; */
+            
+            /* animation-fill-mode: alternate; */
+            
+            
+            
+            /* direction of the animation */
+            /* animation-direction: reverse; */
+
+            /* Short-hand for animation */
+            /* animation: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-film-mode; */
+            animation: omg 5s ease 1s 10 alternate ;
+
+        }
+        @keyframes omg {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 100px;
+                left: 0px;
+            }
+            50%{
+                top: 0px;
+                left: 100px; 
+            }
+            75%{
+                top: 200px;
+                left: 200px;
+            }
+            100%{
+                top: 200px;
+                left: 300px;
+            }
+        }
+        @keyframes Subham {
+            from{
+                width: 100px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus doloribus distinctio excepturi.</p>
+        </div>
+    </div>
+</body>
+</html>

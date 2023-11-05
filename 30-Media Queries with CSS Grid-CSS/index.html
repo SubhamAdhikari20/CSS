@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Media Queries with CSS Grid-CSS</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside"
+                "footer footer footer footer";
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                display: block;
+                background-color: aqua;
+            }
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer";
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            body {
+                display: block;
+                background-color: tomato;
+            }
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer";
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 700px) {
+            body {
+                display: block;
+                background-color: lightgreen;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer";
+            }
+        }
+
+        @media only screen and (min-width: 700px) and (max-width: 900px) {
+            body {
+                display: block;
+                background-color: lightcoral;
+            }
+        }
+
+        .bdr {
+            border: 3px solid blue;
+            padding: 10px 20px;
+            background-color: darkseagreen;
+            
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Shop as you wish</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, incidunt eveniet? Dolorem voluptatem laborum culpa similique amet quas sapiente sint ad nisi? Iure facilis praesentium quisquam fugiat, maiores itaque atque velit soluta at quaerat eos, minus dolorem non quae obcaecati. Quod eligendi itaque magnam, fuga dolorem perferendis quaerat totam eveniet aliquam? Fugit debitis velit omnis eligendi. Labore pariatur corrupti maiores error ex mollitia tempora! Quod officia amet ex accusantium. Nesciunt facilis provident recusandae fugit odio possimus numquam ea sint cumque maxime necessitatibus rerum ipsam delectus in iure, architecto dolores! Vitae delectus, tempore odit eligendi illo earum temporibus, vero qui nostrum optio hic ipsam possimus iusto blanditiis. Maiores sit nam maxime facilis quibusdam sunt non explicabo, ullam totam atque nisi expedita quasi velit, ipsum at labore error inventore consectetur debitis tempore. Ab soluta molestiae quis cum sunt natus, laboriosam pariatur molestias adipisci dolores impedit iste praesentium magnam, ipsam dolor doloribus debitis magni veritatis omnis, rerum reprehenderit eveniet non illum. Officiis.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+        <footer class="bdr">
+            Copyright &copy; Guiders
+        </footer>
+    </div>
+</body>
+
+</html>

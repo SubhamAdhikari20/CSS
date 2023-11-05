@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-Box Model: Margin, Border and Padding-CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: blanchedalmond;
+            border: 4px solid rgb(163, 26, 26);
+           
+            /* padding: 10px; */
+            /* We can set padding/margin on one all side seperately */
+            /* padding-top: 23px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 15px; */
+
+            /* And we can also set padding/margin seperately in one line like this. If top and right are only set than the their opposite are set by default with their respective */
+            /* padding/margin: top right bottom left . It goes clock-wise*/
+            /* padding: 100px 150px 50px 20px;     */
+            /* margin: 100px 150px 50px 20px;  */
+            
+            
+            /*padding/margin: y(top/bottom) x(right/left)*/
+            padding: 20px 50px;
+            
+            
+            /* Same applies for padding and margin */
+            margin: 30px 50px;
+            border-radius: 20px;
+            /* width: 300px; */
+            width: 500px;
+            /* height:20px ; */
+            
+
+            /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height.*/
+            
+            /* Without CSS boxsizing */
+            /* By default, the width and height of an element is calculated like this:
+
+            width + padding + border = actual width of an element
+            height + padding + border = actual height of an element
+
+            This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height). */
+            
+            /* With CSS Box-sizing */
+            /* The box-sizing property allows us to include the padding and border in an element's total width and height.
+
+            If you set box-sizing: border-box; on an element, padding and border are included in the width and height: */
+        }
+        body{
+            background-color: #424ac0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Hello World</h3>
+        <p id="fp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto veniam incidunt harum quis omnis aliquid?</p>
+    </div>
+
+    <div class="container">
+        <h3>Hello World</h3>
+        <p id="sp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto veniam incidunt harum quis omnis aliquid?</p>
+    </div>
+
+    <div class="container">
+        <h3>Hello World</h3>
+        <p id="tp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto veniam incidunt harum quis omnis aliquid?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container{
+            font-size: 30px;
+            text-align: center;
+            color: blueviolet;
+            background-color: bisque;
+            display: none;
+        }
+        @media only screen and (max-width: 300px){
+            #box1{
+                display: block;
+                background-color: aqua;
+            }
+        }    
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            #box2{
+                display: block;
+                background-color: tomato;
+            }
+        }
+        @media only screen and (min-width: 500px) and (max-width: 700px){
+            #box3{
+                display: block;
+                background-color: lightgreen;
+            }
+        }
+        @media only screen and (min-width: 700px) and (max-width: 900px){
+            #box4{
+                display: block;
+                background-color: lightcoral;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="box1">
+        Own your morning elevate your life
+    </div>
+    <div class="container" id="box2">
+        Live a life like no one else now so that you can live a life like no one else later
+    </div>
+    <div class="container" id="box3">
+        Don't let the voices of others drown your inner voices. They(inner voices) already know what you truly wanna become
+    </div>
+    <div class="container" id="box4">
+        Callaous Your Mind
+    </div>
+</body>
+</html>

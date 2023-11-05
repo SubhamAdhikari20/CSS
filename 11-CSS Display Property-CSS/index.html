@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-CSS Display Property-CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            border: 3px solid blue;
+            margin: auto;
+            width: 93%;
+        }
+
+        .top img {
+            border: 4px solid black;
+            width: 75px;
+            display: block;
+            margin: auto;
+        }
+
+        .top h3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 5px 6px;
+            text-align: center;
+        }
+        .container{
+            margin: auto;
+            width: 94%;
+        }
+        .box {
+            color: red;
+            background-color: rgb(43, 137, 137);
+            border: 4px solid black;
+            border-radius: 5px;
+            margin: 4px 7.5px;
+            padding: 6px;
+            display: inline-block;
+            width: 32%;
+        }
+        span{
+            border: 3px solid red;
+            width: 400px;
+            /* display: inline-block; */
+            margin :auto;
+        }
+        /* In inline element we cannot set height and width but we can set them in inline-block and block elements. */
+        
+        /* The display: inline-block Value
+        Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+        Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. */
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <h3>Hello guys welcome to my webi</h3>
+        <img src="images/p1.jpg" alt="Human Images">
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4>LOLOLO</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur blanditiis quod velit
+                veritatis itaque? Quas dolor ipsum natus minima!</p>
+        </div>
+        <div class="box">
+            <h4>LOLOLO</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur blanditiis quod velit
+                veritatis itaque? Quas dolor ipsum natus minima!</p>
+        </div>
+        <div class="box">
+            <h4>LOLOLO</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consectetur blanditiis quod velit
+                veritatis itaque? Quas dolor ipsum natus minima!</p>
+        </div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laborum!</span>
+    </div>
+</body>
+
+</html>

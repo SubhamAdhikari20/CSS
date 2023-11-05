@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            padding: 10px 15px;
+            margin: 4px 10px;
+            /* border: 3px solid red; */ 
+            background-color:rgb(119, 211, 211);
+            
+            /* OUTSIDE THE BOX */
+            /* box-shadow: offset-x, offset-y*/
+            /* box-shadow: 5px 6px; */
+
+            /* box-shadow: offset-x, offset-y, color*/
+            /* box-shadow: 8px 10px slateblue; */
+            
+            /* box-shadow: offset-x, offset-y,blur-radius color*/
+            /* box-shadow: -8px -10px 10px saddlebrown; */
+            /* negative represents the upward shift in y-axis and leftward shift in x-axis*/
+
+            /* box-shadow: offset-x, offset-y, blur-radius, spread-radius, color  */
+            /* box-shadow: 7px 9px 11px 8px lime ; */
+            /* box-shadow: 7px 9px 11px 8px rgba(13, 119, 225, 0.9) ; */
+            
+            /* INSIDE THE BOX */
+            /* box-shadow: inset x, y, color */
+            /* box-shadow: inset 4px 5px blueviolet; */
+            
+            /* box-shadow: inset x, y, blur-radius, spread-radius color */
+            /* box-shadow: inset 7px 9px 8px 5px royalblue; */
+
+            /* MULTIPLE SHADOW */
+            box-shadow: 4px 5px 6px rgb(161, 112, 207), 7px 9px 8px 5px rgb(17, 52, 160);
+        }
+        .box h2{
+            /* text-shadow: offest-x, off-sety, blur-radius, color */
+            text-shadow: 2px 2px 2px white;
+            /* negative represents the upward shift in y-axis and leftward shift in x-axis */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h2>Box One</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, eum.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h2>Box Two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad nostrum sed excepturi. Labore, amet.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h2>Box Three</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi possimus impedit laborum enim at nesciunt consectetur ipsam reprehenderit eligendi?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-More on CSS Selectors-CSS</title>
+    <style>
+        h2{
+            color: red;
+            background-color: aqua;
+            font-size: 30px;
+            text-align: center;
+        }
+        /* For any thing under div */
+        /* div li p{
+            color: blue;
+            background-color: aquamarine;
+            font-weight: bold;
+        } */
+
+        /* Only for the direct child of div
+                    or
+        When p is right inside div */
+        /* div > p{
+            color: blue;
+            background-color: aquamarine;
+            font-weight: bold;
+        } */
+
+        /* Only if div is previous sibling of p
+                       or
+        When p is right after div i.e. p is the next sibling of div*/
+        /* div + p{
+            color: blue;
+            background-color: aquamarine;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Embrace Pain</h2>
+    <div class="container">
+        <div class="og">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <ul>
+                <li>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li>not affected</li>
+                <p>Hello Ma paragraph hoon ul vintra</p>
+            </ul>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nam?</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate molestiae quo debitis placeat, libero suscipit?</p>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, totam?</div>
+</body>
+</html>

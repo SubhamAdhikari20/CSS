@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties-CSS</title>
+    <style>
+        :root{
+            /* access varible anywhere */
+            --shadow-color: red; 
+            --box-color: yellow;    
+            --border-color: blue;
+            --maxw: 250px;
+            --primary-color: aqua;
+        }
+        body{
+            
+        }
+        .container{
+            display: flex;
+            /* border: 5px solid green; */
+            justify-content: center;
+            align-items: center;
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--primary-color);
+        }
+        .box{
+            /* --box-color: yellow;   */
+            /*Variable in CSS but it works as a local variavle(i.e Once delecared,it is only appicable for the very selectors) */
+            /* However there is an exception: we can use (:root{} selector for declaring a global variable) */
+            height: 300px;
+            width: 350px;
+            background-color: var(--box-color);
+            box-shadow: 4px 5px 3px var(--shadow-color);
+            border: 3px solid var(--border-color);
+            margin: 5px 6px;
+            padding: 4px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+</html>
